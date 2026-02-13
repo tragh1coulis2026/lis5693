@@ -1,0 +1,76 @@
+Say hello to our YouTube transcripts
+API. A simple way to scrape video
+transcripts instantly. Hi, it's Hilman
+from SER API. Let's see how to scrape
+YouTube transcript using a simple API
+from SER API. Make sure you've
+registered at SER API.com to get your
+SER API key. Next, we want to export our
+SER API API key. Make sure to replace
+your actual API key that you get from
+our dashboard. Next, create a new
+main.py PI file on the same folder we
+exported the API key. We can include or
+import the API key with this variable.
+Of course, you can name it whatever you
+want. We will use the request package to
+perform the HTTP request. Make sure to
+install it with PIP install request. And
+then we will prepare the parameter
+variables or we call it params here.
+Include the API key. You can use the
+same method by exporting and importing
+the API key or replace your actual API
+key string here. We will soon look into
+other parameters depending on the search
+engine. Next, we will perform the
+request get itself and then catch the
+response by search.json. And finally, to
+beautify the results on our terminal,
+let's import JSON. So, we can indent the
+response like this. We will use the
+YouTube video transcript API from SER
+API. Therefore, we will put the YouTube
+video transcript as the engine value.
+And then we need the video ID. We can
+get the video ID directly from YouTube.
+For example, let's say I take this
+video. Get the video ID like this. And
+it's important to put the type in case
+we only have the automatic speech
+recognition transcript.
+Looks good. Now, let's run the file. You
+can see an array of each of the text
+here complete with the snippet start and
+end in a milliseconds. We also provide
+the chapters in the response. So if you
+are interested in the chapters
+information, feel free to scrap it as
+well from this just in response. Let's
+just focus to the transcript for now.
+Let's say we want to loop all the
+information here. Here is the example in
+the Python. I'll comment out the print
+for all the information and we just
+focus on these two fields. First, the
+snippet and also the start time text on
+the transcript response. Let's rerun
+this. Now, we should see the tidy
+version of the response with only
+snippet and also the start time text as
+the output here. You also have the
+option to define the language for the
+transcription whenever it's available.
+So let's say for example I'm taking this
+video put it as the video ID here and
+then let's add a new parameter called
+language code and we put the e here for
+Germany and it's important to note if
+you want to get the translation and it's
+not the original uh transcription we
+should comment out the type as here and
+now we're running the program we should
+see the transcription in the language
+that we are interested in that's it I
+hope you like it see you on the next
+video bye.
